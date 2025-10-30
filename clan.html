@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sportska udruga</title>
+    <style>
+      #sportoviList .list-group-item{
+       background-color: slategray;
+       text-align: center;
+       font-weight: bold;
+     }
+   </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <a class="active" href="index.html">
+        <i class="fa fa-home" aria-hidden="true"></i></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="oudruzi.html">O udruzi</a>
+        </li>
+        <li class="nav-item dropdown" onmouseover="prikazi()">
+          <a class="nav-link dropdown dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Uprava</a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="pred.html">Predsjednik</a>
+            <a class="dropdown-item" href="podpred.html">Podpredsjednik</a>
+            <a class="dropdown-item" href="taj.html">Tajnik</a>
+            <a class="dropdown-item" href="likv.html">Likvidator</a>
+            <a class="dropdown-item" href="inodbor.html">Odbori</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="clanovi.html">Članovi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="container justify-content-center align-items-center">
+      <div class="jumbotron" style="background-color: slategray;">
+        <h1 class="display-4" id="currentName"></h1>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-4 ">
+          <h4 class="font-weight-bold">Informacije o korisniku</h4>
+          <br>
+          <h6 class="font-weight-bold" style="display: inline-block;">Datum rođenja: </h6> 
+          <h6 style="display: inline-block;" id="Datum"></h6>
+          <br>
+          <h6 class="font-weight-bold" style="display: inline-block;">OIB: </h6> 
+          <h6 style="display: inline-block;" id="OIB"></h6>
+          <br>
+          <h6 class="font-weight-bold" style="display: inline-block;">Adresa: </h6> 
+          <h6 style="display: inline-block;" id="Adresa"></h6>
+          <br>
+          <h6 class="font-weight-bold" style="display: inline-block;">Mjesto: </h6> 
+          <h6 style="display: inline-block;" id="Mjesto"></h6>
+          <br>
+          <h6 class="font-weight-bold" style="display: inline-block;">Email: </h6> 
+          <h6 style="display: inline-block;" id="Email"></h6>
+          <br>
+        </div>
+        <div class="col-4">
+          <h4 class="text-center font-weight-bold">Sportovi</h4>
+          <br>
+          <ul id="sportoviList" class="list-group"></ul>
+          <br>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalBiraj">Ažuriraj</button>
+          <div class="modal" tabindex="-1" id="modalBiraj">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ažuriraj</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul id="sportList" class="list-group"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <h4 class="text-center font-weight-bold">Članarina</h4>
+          <br>
+          <table class="table table-dark" id="tableClanarina">
+            <thead>
+              <tr id="tr">
+                <th>Datum plaćanja</th>
+                <th>Iznos</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+              </tr>
+            </tbody>
+        </table>
+        <br>
+        <button type="button" class="btn btn-dark" id="btnPlati">Plati članarinu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="js/firebase_config.js"></script>
+    <script src="js/func.js"></script>
+    <script src="js/redirekcija.js"></script>
+    <script src="js/administracija.js"></script>
+    <script src="js/clan.js"></script>
+  </body>
+</html>

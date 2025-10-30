@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sportska udruga</title>
+    <style>
+      #izvrsniOdborList .list-group-item{
+	      background-color: slategray;
+	      text-align: center;
+	      font-weight: bold;
+      }
+      #nadzorniOdborList .list-group-item{
+	      background-color: slategray;
+	      text-align: center;
+	      font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <a class="active" href="index.html">
+        <i class="fa fa-home" aria-hidden="true"></i></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="oudruzi.html">O udruzi</a>
+        </li>
+        <li class="nav-item dropdown" onmouseover="prikazi()">
+          <a class="nav-link dropdown dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Uprava</a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="pred.html">Predsjednik</a>
+            <a class="dropdown-item" href="podpred.html">Podpredsjednik</a>
+            <a class="dropdown-item" href="taj.html">Tajnik</a>
+            <a class="dropdown-item" href="likv.html">Likvidator</a>
+            <a class="dropdown-item" href="inodbor.html">Odbori</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="clanovi.html">Članovi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <br>
+      <button type="button" class="btnBiraj btn-dark" data-toggle="modal" data-target="#modalBiraj">Biraj</button>
+      <div class="modal" tabindex="-1" id="modalBiraj">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Biraj odbor</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                  <ul id="userList" class="list-group justify-content-center"></ul>
+                </div>
+                <div class="col-6">
+                  <select id="odborSelect">
+                    <option value="izvrsni">Izvršni odbor</option>
+                    <option value="nadzorni">Nadzorni odbor</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+              <button type="button" class="btn btn-dark" id="chooseBtn" data-dismiss="modal">Biraj</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="jumbotron" style="background-color: slategrey;">
+            <h1 class="text-center display-4 font-weight-bold">Izvršni odbor</h1>
+            <h4 class="text-center">Članovi izvršnog odbora</h4>
+          </div>
+          <ul id="izvrsniOdborList" class="list-group">
+            
+          </ul>
+          <br>
+          <button type="button" class="btn btn-dark" id="btnIO">Ukloni iz izvršnog odbora</button>
+        </div>
+        <div class="col-6">
+          <div class="jumbotron" style="background-color: slategrey;">
+            <h1 class="text-center display-4 font-weight-bold">Nadzorni odbor</h1>
+            <h4 class="text-center">Članovi nadzornog odbora</h4>
+          </div>
+          <ul id="nadzorniOdborList" class="list-group">
+            
+          </ul>
+          <br>
+          <button type="button" class="btn btn-dark" id="btnNO">Ukloni iz nadzornog odbora</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="js/firebase_config.js"></script>
+    <script src="js/func.js"></script>
+    <script src="js/redirekcija.js"></script>
+    <script src="js/administracija.js"></script>
+    <script src="js/odbor.js"></script>
+  </body>
+</html>

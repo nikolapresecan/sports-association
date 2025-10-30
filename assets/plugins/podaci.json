@@ -1,0 +1,214 @@
+{
+  "korisnici": {
+    "1": {
+      "adresa": "Ulica 1",
+      "datum_rodenja": "07.01.1990.",
+      "email": "ana@example.com",
+      "ime": "Ana",
+      "mjesto": "Grad",
+      "oib": "12345678901",
+      "prezime": "Anić",
+      "status": 0
+    },
+    "2": {
+      "adresa": "Ulica 2",
+      "datum_rodenja": "15.02.1995.",
+      "email": "marko@example.com",
+      "ime": "Marko",
+      "mjesto": "Grad",
+      "oib": "98765432109",
+      "prezime": "Marković",
+      "status": 0
+    },
+    "3": {
+      "adresa": "Ulica 3",
+      "datum_rodenja": "20.04.1988.",
+      "email": "ivana@example.com",
+      "ime": "Ivana",
+      "mjesto": "Grad",
+      "oib": "45678901234",
+      "prezime": "Ivanić",
+      "status": 0
+    },
+    "4": {
+      "adresa": "Ulica 4",
+      "datum_rodenja": "10.07.1992.",
+      "email": "pero@example.com",
+      "ime": "Pero",
+      "mjesto": "Grad",
+      "oib": "56789012345",
+      "prezime": "Perić",
+      "status": 0
+    },
+    "5": {
+      "adresa": "Ulica 5",
+      "datum_rodenja": "25.09.1998.",
+      "email": "ema@example.com",
+      "ime": "Ema",
+      "mjesto": "Grad",
+      "oib": "23456789012",
+      "prezime": "Emanović",
+      "status": 2
+    },
+    "6": {
+      "adresa": "Ulica 6",
+      "datum_rodenja": "05.12.1994.",
+      "email": "luka@example.com",
+      "ime": "Luka",
+      "mjesto": "Grad",
+      "oib": "67890123456",
+      "prezime": "Lukić",
+      "status": 0
+    },
+    "7": {
+      "adresa": "Ulica 7",
+      "datum_rodenja": "15.03.1986.",
+      "email": "nina@example.com",
+      "ime": "Nina",
+      "mjesto": "Grad",
+      "oib": "34567890123",
+      "prezime": "Ninić",
+      "status": 0
+    },
+    "8": {
+      "adresa": "Ulica 8",
+      "datum_rodenja": "30.06.1991.",
+      "email": "mario@example.com",
+      "ime": "Mario",
+      "mjesto": "Grad",
+      "oib": "78901234567",
+      "prezime": "Marić",
+      "status": 0
+    },
+    "9": {
+      "adresa": "Ulica 9",
+      "datum_rodenja": "10.08.1989.",
+      "email": "iva@example.com",
+      "ime": "Iva",
+      "mjesto": "Grad",
+      "oib": "45678901234",
+      "prezime": "Ivić",
+      "status": 0
+    },
+    "10": {
+      "adresa": "Ulica 10",
+      "datum_rodenja": "20.11.1993.",
+      "email": "ante@example.com",
+      "ime": "Ante",
+      "mjesto": "Grad",
+      "oib": "89012345678",
+      "prezime": "Antić",
+      "status": 0
+    },
+    "-NoBbDXsCS_4NXttL0It": {
+      "adresa": "Stjepana Radića 11",
+      "datum_rodenja": "21.11.2002.",
+      "email": "nikola.presecan@vuv.hr",
+      "ime": "Nikola",
+      "mjesto": "Dinjevac",
+      "oib": "94031503575",
+      "prezime": "Presečan",
+      "status": 1
+    }
+  },
+  "sportovi": {
+    "1": {
+      "ime": "Nogomet"
+    },
+    "2": {
+      "ime": "Tenis"
+    },
+    "3": {
+      "ime": "Plivanje"
+    },
+    "4": {
+      "ime": "Košarka"
+    },
+    "5": {
+      "ime": "Rukomet"
+    },
+    "6": {
+      "ime": "Boks"
+    }
+  },
+  "uloge": {
+    "1": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 1,
+      "naziv": "predsjednik"
+    },
+    "2": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 2,
+      "naziv": "podpredsjednik"
+    },
+    "3": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 3,
+      "naziv": "tajnik"
+    },
+    "4": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 4,
+      "naziv": "likvidator"
+    },
+    "5": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 5,
+      "naziv": "izvršni član"
+    },
+    "6": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 6,
+      "naziv": "nadzorni član"
+    },
+    "7": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 7,
+      "naziv": "nadzorni član"
+    },
+    "8": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 8,
+      "naziv": "nadzorni član"
+    },
+    "9": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 9,
+      "naziv": "izvršni član"
+    },
+    "10": {
+      "datum_pocetka": "01.01.2023.",
+      "datum_zavrsetka": "01.01.2024.",
+      "korisnik_id": 10,
+      "naziv": "izvršni član"
+    },
+    "-Nomn-AcwdYG_RUh4L4p": {
+      "datum_pocetka": "22.01.2024.",
+      "datum_zavrsetka": "22.01.2025.",
+      "korisnik_id": "-NoBbDXsCS_4NXttL0It",
+      "naziv": "predsjednik"
+    },
+    "-NorvazWZAicrkq_V8CB": {
+      "datum_pocetka": "23.01.2024.",
+      "datum_zavrsetka": "23.01.2025.",
+      "korisnik_id": 5,
+      "naziv": "podpredsjednik"
+    }
+  },
+  "clanarina":{
+
+  },
+  "kontakt":{
+
+  }
+}

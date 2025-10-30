@@ -1,0 +1,73 @@
+body{
+	background-color: slategrey;
+	font-family: 'Times New Roman', Times, serif;
+}
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+.fa{
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+.fa:last-child{
+	color: gray;
+}
+#login .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 320px;
+	border: 2px solid #000000;
+  	background-color: rgba(112, 128, 144, 0.5);
+}
+#login .container #login-row #login-column #login-box #login-form {
+	padding: 20px;
+}
+#login
+	.container
+	#login-row
+	#login-column
+	#login-box
+	#login-form
+	#register-link {
+	margin-top: -85px;
+}
+.btnLogin{
+	display: block;
+	margin: auto;
+	width: 40%;
+}
+#searchInput{
+	float: right;
+}
+.btnPosalji{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+.btnOdjava{
+	display: flex;
+	float: right;
+}
+.btnBiraj{
+	float: right;
+}
+#odborSelect{
+	margin-top: 142px;
+	max-width: 700px;
+	padding: 20px;
+}
+.btn{
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+#searchInput{
+	border-radius: 50px; 
+	border: 2px solid; 
+	padding: 4px 6px;
+	background-color: slategray;
+}
+#searchInput::placeholder {
+	color: #000000;
+  }
