@@ -1,4 +1,4 @@
-# Sportska Udruga
+# Sports association
 Simple static website for a sports association built with **HTML, CSS, and JavaScript**.  
 Includes basic **Firebase integration** (Auth + Realtime Database) and local plugins (Bootstrap, jQuery, FontAwesome).
 
