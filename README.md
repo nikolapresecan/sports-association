@@ -7,4 +7,3 @@ Create a Firebase project and Realtime Database in Firebase Console. Then copy y
 
 ## Run locally
 Open `index.html` in your browser
-
